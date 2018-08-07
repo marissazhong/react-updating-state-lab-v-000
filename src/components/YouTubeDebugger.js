@@ -7,9 +7,10 @@ export default class YouTubeDebugger extends React.Component {
 
     // Define the initial state:
     this.state = {
-      timesClicked: 0,
+      errors: [],
+      user: null,
+      settings: { bitrate: 8, video: { resolution: '1080p' } }
     };
-  }
 
   handleClick = () => {
     count = this.state.timesClicked+1
